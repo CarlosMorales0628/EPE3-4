@@ -17,12 +17,12 @@ export class AppComponent {
     },
     {
       title: 'Login',
-      url: '/list',
+      url: '/login',
       icon: 'person'
     },
     {
       title: 'Comprar',
-      url: '/#',
+      url: '/compras',
       icon: 'cart'
     }
   ];

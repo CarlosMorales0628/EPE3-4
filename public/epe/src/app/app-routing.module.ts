@@ -14,7 +14,12 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
+  },
+  {
+    path: 'xde',
+    loadChildren: './list/list.module#ListPageModule'
   }
+
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="medium">
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,9 +9,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="#030000">
+<ion-content>
     <ion-card class="welcome-card">
       <ion-img src="/assets/1.png"></ion-img>
     </ion-card>
+    <ion-select okText="Seleccionar" aria-selected="" cancelText="Cancelar" placeholder="Seleccionar Compra" [(ngModel)]="combo">
+      <ion-select-option value="840">840 RP a 500$</ion-select-option>
+      <ion-select-option value="1100">1100 RP a 700$</ion-select-option>
+      <ion-select-option value="1520">1520 RP a 1100$</ion-select-option>
+      <ion-select-option value="2250">2250 RP a 1720$</ion-select-option>
+      <ion-select-option value="3450">3450 RP a 2370$</ion-select-option>
+      <ion-select-option value="4550">4550 RP a 2810$</ion-select-option>
+      <ion-select-option value="4970">4970 RP a 3200$</ion-select-option>
+      <ion-select-option value="5700">5700 RP a 3970$</ion-select-option>
+      <ion-select-option value="6120">6120 RP a 4360$</ion-select-option>
+      <ion-select-option value="7200">7200 RP a 5000$</ion-select-option>
+      <ion-select-option value="8300">8300 RP a 5890$</ion-select-option>
+      <ion-select-option value="9450">9450 RP a 8500$</ion-select-option>
+    </ion-select>
+<ion-item>
+    <ion-input placeholder="Nombre de invocador"></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-input placeholder="Correo Electronico"></ion-input>
+  </ion-item>
 
+    <ion-button expand="full" color="dark" (click)="pedido()">Realizar compra</ion-button>
 </ion-content>
